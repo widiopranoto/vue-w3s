@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<body>
+
+<h2>Vue.js</h2>
+
+<div id="coba">
+  {{ pesan }}
+</div>
+
+<p>
+<button onclick="klik()">Click Me!</button>
+</p>
+
+<script>
+var objectKu = new Vue({
+  el: '#coba',
+  data: {pesan: 'Hello Vue!'}
+})
+
+function klik() {
+    objectKu.pesan = "John Doe";
+}
+</script>
+
+</body>
+</html>

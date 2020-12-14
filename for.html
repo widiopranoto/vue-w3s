@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<body>
+
+<h2>Vue.js</h2>
+
+<div id="coba">
+  <ul>
+    <li v-for="i in daftar">
+      {{ i.text }}
+    </li>
+  </ul>
+</div>
+
+<script>
+myObject = new Vue({
+  el: '#coba',
+  data: {
+    daftar: [
+      { text: 'Ini teks pertama' },
+      { text: 'Ini teks kedua' },
+      { text: 'Ini teks ketiga' }
+    ]
+  }
+})
+</script>
+
+</body>
+</html>
